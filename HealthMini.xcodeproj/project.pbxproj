@@ -50,6 +50,7 @@
 			isa = PBXGroup;
 			children = (
 				94F4145E27829BDF00441118 /* HealthMini */,
+				94F4147527829C2200441118 /* Support */,
 				94F4145D27829BDF00441118 /* Products */,
 				DB59D3EC97182373F6A0C6C4 /* Pods */,
 				D78093A02027EF1968E66ED5 /* Frameworks */,
@@ -70,9 +71,8 @@
 				94F414832782E2B600441118 /* View */,
 				94F414862782E78600441118 /* ViewModel */,
 				94F4147327829BF100441118 /* App */,
-				94F4147527829C2200441118 /* Support */,
-				94F4147427829C1700441118 /* Resource */,
 				94F414802782D2D700441118 /* BaseCoordinator */,
+				94F4147427829C1700441118 /* Resource */,
 			);
 			path = HealthMini;
 			sourceTree = "<group>";
@@ -131,8 +131,8 @@
 		94F414832782E2B600441118 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				94F4148927846B4800441118 /* SettingCoordinator.swift */,
 				94F4148B278470B600441118 /* settingViewController.swift */,
+				94F4148927846B4800441118 /* SettingCoordinator.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";

@@ -15,6 +15,7 @@ class SettingCoordinator{
     }
     
     func start(){
-        let settingCoordinator = 
+        let settingViewController = settingViewController()
+        navigationController.pushViewController(settingViewController, animated: true)
     }
 }

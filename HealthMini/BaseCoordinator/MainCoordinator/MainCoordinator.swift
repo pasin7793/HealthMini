@@ -8,6 +8,7 @@
 import UIKit
 
 class MainCoordinator: Coordinator{
+    
     let navigationController: UINavigationController
     
     private let window: UIWindow
@@ -20,6 +21,7 @@ class MainCoordinator: Coordinator{
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
         
-        let settingCoordinator
+        let settingCoordinator = SettingCoordinator(navigationController: navigationController)
+        settingCoordinator.start()
     }
 }

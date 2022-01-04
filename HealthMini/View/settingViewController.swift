@@ -8,12 +8,12 @@
 import UIKit
 import RealmSwift
 
-final class settingView: UIViewController{
+class settingViewController: UIViewController{
     
     //MARK: Properties
     private let setGoalLabel: UILabel = {
         let setGoalLabel = UILabel()
-        setGoalLabel.text = "목표를 설정해 주세요."
+        setGoalLabel.text = "목표를 정해주세요."
         setGoalLabel.textColor = .black
         return setGoalLabel
     }()
@@ -34,20 +34,19 @@ final class settingView: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
         view.backgroundColor = .white
-            slider.setThumbImage(UIImage(cgImage: sliderThumb as! CGImage), for: .normal)
-            setup()
-        func setup(){
-            view.addSubview(slider)
-            slider.translatesAutoresizingMaskIntoConstraints = false
-            slider.widthAnchor.constraint(equalToConstant: 50).isActive = true
-            slider.heightAnchor.constraint(equalToConstant: 20).isActive = true
-            slider.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-            slider.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-            view.addSubview(setGoalLabel)
-            view.addSubview(sliderThumb)
-        }
+        setup()
+    }
+    func setup(){
+        view.addSubview(slider)
+        slider.translatesAutoresizingMaskIntoConstraints = false
+        slider.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        slider.heightAnchor.constraint(equalToConstant: 20).isActive = true
+        slider.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        slider.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        slider.setThumbImage(UIImage(cgImage: sliderThumb as! CGImage), for: .normal)
+        view.addSubview(setGoalLabel)
+        view.addSubview(sliderThumb)
     }
 }
 extension UIView{
