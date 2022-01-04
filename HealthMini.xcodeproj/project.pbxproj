@@ -14,7 +14,8 @@
 		94F4146C27829BE100441118 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F4146A27829BE100441118 /* LaunchScreen.storyboard */; };
 		94F4147D2782BEE400441118 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F4147C2782BEE400441118 /* Coordinator.swift */; };
 		94F4147F2782BF4000441118 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F4147E2782BF4000441118 /* MainCoordinator.swift */; };
-		94F414882783359D00441118 /* settingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F414872783359D00441118 /* settingView.swift */; };
+		94F4148A27846B4800441118 /* SettingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F4148927846B4800441118 /* SettingCoordinator.swift */; };
+		94F4148C278470B600441118 /* settingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F4148B278470B600441118 /* settingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +28,8 @@
 		94F4146D27829BE100441118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94F4147C2782BEE400441118 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		94F4147E2782BF4000441118 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
-		94F414872783359D00441118 /* settingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingView.swift; sourceTree = "<group>"; };
+		94F4148927846B4800441118 /* SettingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCoordinator.swift; sourceTree = "<group>"; };
+		94F4148B278470B600441118 /* settingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingViewController.swift; sourceTree = "<group>"; };
 		C0E9CD23F37FAB1E10463236 /* Pods_HealthMini.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthMini.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F39B35850010B767510F9544 /* Pods-HealthMini.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthMini.release.xcconfig"; path = "Target Support Files/Pods-HealthMini/Pods-HealthMini.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,7 +131,8 @@
 		94F414832782E2B600441118 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				94F414872783359D00441118 /* settingView.swift */,
+				94F4148927846B4800441118 /* SettingCoordinator.swift */,
+				94F4148B278470B600441118 /* settingViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -273,10 +276,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				94F4147D2782BEE400441118 /* Coordinator.swift in Sources */,
-				94F414882783359D00441118 /* settingView.swift in Sources */,
+				94F4148A27846B4800441118 /* SettingCoordinator.swift in Sources */,
 				94F4147F2782BF4000441118 /* MainCoordinator.swift in Sources */,
 				94F4146027829BDF00441118 /* AppDelegate.swift in Sources */,
 				94F4146227829BDF00441118 /* SceneDelegate.swift in Sources */,
+				94F4148C278470B600441118 /* settingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
