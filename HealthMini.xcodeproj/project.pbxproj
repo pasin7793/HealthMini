@@ -14,7 +14,7 @@
 		94F4146C27829BE100441118 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F4146A27829BE100441118 /* LaunchScreen.storyboard */; };
 		94F4147D2782BEE400441118 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F4147C2782BEE400441118 /* Coordinator.swift */; };
 		94F4147F2782BF4000441118 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F4147E2782BF4000441118 /* MainCoordinator.swift */; };
-		94F414852782E2D200441118 /* settingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F414842782E2D200441118 /* settingViewController.swift */; };
+		94F414882783359D00441118 /* settingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F414872783359D00441118 /* settingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		94F4146D27829BE100441118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94F4147C2782BEE400441118 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		94F4147E2782BF4000441118 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
-		94F414842782E2D200441118 /* settingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingViewController.swift; sourceTree = "<group>"; };
+		94F414872783359D00441118 /* settingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingView.swift; sourceTree = "<group>"; };
 		C0E9CD23F37FAB1E10463236 /* Pods_HealthMini.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthMini.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F39B35850010B767510F9544 /* Pods-HealthMini.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthMini.release.xcconfig"; path = "Target Support Files/Pods-HealthMini/Pods-HealthMini.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -47,12 +47,7 @@
 		94F4145327829BDF00441118 = {
 			isa = PBXGroup;
 			children = (
-				94F414862782E78600441118 /* ViewModel */,
-				94F414832782E2B600441118 /* View */,
 				94F4145E27829BDF00441118 /* HealthMini */,
-				94F4147327829BF100441118 /* App */,
-				94F4147527829C2200441118 /* Support */,
-				94F4147427829C1700441118 /* Resource */,
 				94F4145D27829BDF00441118 /* Products */,
 				DB59D3EC97182373F6A0C6C4 /* Pods */,
 				D78093A02027EF1968E66ED5 /* Frameworks */,
@@ -70,6 +65,11 @@
 		94F4145E27829BDF00441118 /* HealthMini */ = {
 			isa = PBXGroup;
 			children = (
+				94F414832782E2B600441118 /* View */,
+				94F414862782E78600441118 /* ViewModel */,
+				94F4147327829BF100441118 /* App */,
+				94F4147527829C2200441118 /* Support */,
+				94F4147427829C1700441118 /* Resource */,
 				94F414802782D2D700441118 /* BaseCoordinator */,
 			);
 			path = HealthMini;
@@ -129,7 +129,7 @@
 		94F414832782E2B600441118 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				94F414842782E2D200441118 /* settingViewController.swift */,
+				94F414872783359D00441118 /* settingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -273,8 +273,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				94F4147D2782BEE400441118 /* Coordinator.swift in Sources */,
+				94F414882783359D00441118 /* settingView.swift in Sources */,
 				94F4147F2782BF4000441118 /* MainCoordinator.swift in Sources */,
-				94F414852782E2D200441118 /* settingViewController.swift in Sources */,
 				94F4146027829BDF00441118 /* AppDelegate.swift in Sources */,
 				94F4146227829BDF00441118 /* SceneDelegate.swift in Sources */,
 			);
