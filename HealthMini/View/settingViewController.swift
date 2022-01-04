@@ -32,16 +32,20 @@ class settingViewController: UIViewController{
         return sliderThumb
     }()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .white
-        setup()
+    init() {
+        super.init(nibName: nil, bundle: nil)
     }
-    func setup(){
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func loadView() {
+        view = UIView()
+        view.backgroundColor = .white
+    }
+    private func setup(){
         view.addSubview(slider)
         slider.translatesAutoresizingMaskIntoConstraints = false
-        slider.widthAnchor.constraint(equalToConstant: 50).isActive = true
-        slider.heightAnchor.constraint(equalToConstant: 20).isActive = true
         slider.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         slider.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         slider.setThumbImage(UIImage(cgImage: sliderThumb as! CGImage), for: .normal)
