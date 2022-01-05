@@ -19,5 +19,15 @@ class AppCoordinator: BaseCoordinator{
     override func start() {
         let navigationController = UINavigationController()
         let settingCoordinator = SettingCoordinator(navigationController: navigationController)
+        
+        self.store(coordinator: settingCoordinator)
+        settingCoordinator.start()
+        
+        window.rootViewController = navigationController
+        window.makeKeyAndVisible()
+        
+        settingCoordinator.isCompleted = {
+            self.free(coordinator: settingCoordinator)
+        }
     }
 }
