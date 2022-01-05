@@ -11,13 +11,12 @@ import SwiftUI
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-    
-    private var AppCoordinator: AppCoordinator!
+    private var appCoordinator: AppCoordinator!
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         window = UIWindow()
         
-        let appCoordinator = AppCoordinator(window:window!)
+        let appCoordinator = AppCoordinator(window: window!)
         appCoordinator.start()
         self.appCoordinator = appCoordinator
     }
