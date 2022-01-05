@@ -18,6 +18,7 @@
 		94F414912785843700441118 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F414902785843700441118 /* BaseCoordinator.swift */; };
 		94F414932785868800441118 /* SettingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F414922785868800441118 /* SettingCoordinator.swift */; };
 		94F4149627858A1A00441118 /* CoordinatorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F4149527858A1A00441118 /* CoordinatorExt.swift */; };
+		94F414982785926900441118 /* settingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F414972785926900441118 /* settingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		94F414902785843700441118 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		94F414922785868800441118 /* SettingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCoordinator.swift; sourceTree = "<group>"; };
 		94F4149527858A1A00441118 /* CoordinatorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorExt.swift; sourceTree = "<group>"; };
+		94F414972785926900441118 /* settingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingViewModel.swift; sourceTree = "<group>"; };
 		C0E9CD23F37FAB1E10463236 /* Pods_HealthMini.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthMini.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F39B35850010B767510F9544 /* Pods-HealthMini.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthMini.release.xcconfig"; path = "Target Support Files/Pods-HealthMini/Pods-HealthMini.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,6 +56,8 @@
 			isa = PBXGroup;
 			children = (
 				94F4145E27829BDF00441118 /* HealthMini */,
+				94F4147327829BF100441118 /* App */,
+				94F4147427829C1700441118 /* Resource */,
 				94F4147527829C2200441118 /* Support */,
 				94F4145D27829BDF00441118 /* Products */,
 				DB59D3EC97182373F6A0C6C4 /* Pods */,
@@ -72,13 +76,7 @@
 		94F4145E27829BDF00441118 /* HealthMini */ = {
 			isa = PBXGroup;
 			children = (
-				94F414832782E2B600441118 /* View */,
-				94F414862782E78600441118 /* ViewModel */,
-				94F4148F2785842100441118 /* Base */,
-				94F4147327829BF100441118 /* App */,
-				94F414802782D2D700441118 /* BaseCoordinator */,
-				94F41494278589C400441118 /* Extensions */,
-				94F4147427829C1700441118 /* Resource */,
+				94F41499278594C400441118 /* Sources */,
 			);
 			path = HealthMini;
 			sourceTree = "<group>";
@@ -146,6 +144,7 @@
 		94F414862782E78600441118 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				94F414972785926900441118 /* settingViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -164,6 +163,18 @@
 				94F4149527858A1A00441118 /* CoordinatorExt.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		94F41499278594C400441118 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				94F414832782E2B600441118 /* View */,
+				94F414862782E78600441118 /* ViewModel */,
+				94F4148F2785842100441118 /* Base */,
+				94F414802782D2D700441118 /* BaseCoordinator */,
+				94F41494278589C400441118 /* Extensions */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		D78093A02027EF1968E66ED5 /* Frameworks */ = {
@@ -301,6 +312,7 @@
 				94F4146027829BDF00441118 /* AppDelegate.swift in Sources */,
 				94F4146227829BDF00441118 /* SceneDelegate.swift in Sources */,
 				94F414932785868800441118 /* SettingCoordinator.swift in Sources */,
+				94F414982785926900441118 /* settingViewModel.swift in Sources */,
 				94F4149627858A1A00441118 /* CoordinatorExt.swift in Sources */,
 				94F4148C278470B600441118 /* settingViewController.swift in Sources */,
 				94F4148E2785840D00441118 /* AppCoordinator.swift in Sources */,

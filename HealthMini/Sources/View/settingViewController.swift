@@ -17,6 +17,11 @@ class settingViewController: UIViewController{
         setGoalLabel.textColor = .black
         return setGoalLabel
     }()
+    private var sliderValue: UILabel = {
+        let sliderValue = UILabel()
+        sliderValue.textColor = .black
+        return sliderValue
+    }()
     
     private let slider: UISlider = {
         let slider = UISlider()
@@ -27,7 +32,7 @@ class settingViewController: UIViewController{
     }()
     
     private let sliderThumb: UIView = {
-        let sliderThumb = UIView(frame: CGRect(x: 0, y: 300, width: 72, height: 30))
+        let sliderThumb = UIView(frame: CGRect(x: 50, y: 300, width: 72, height: 30))
         sliderThumb.backgroundColor = UIColor(red: 1, green: 0.3686, blue: 0.3686, alpha: 1.0)
         return sliderThumb
     }()
@@ -39,9 +44,10 @@ class settingViewController: UIViewController{
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func loadView() {
-        view = UIView()
+    override func viewDidLoad() {
+        super.viewDidLoad()
         view.backgroundColor = .white
+        setup()
     }
     private func setup(){
         view.addSubview(slider)
@@ -49,8 +55,11 @@ class settingViewController: UIViewController{
         slider.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         slider.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         slider.setThumbImage(UIImage(cgImage: sliderThumb as! CGImage), for: .normal)
+        
+        view.addSubview(sliderValue)
         view.addSubview(setGoalLabel)
         view.addSubview(sliderThumb)
+
     }
 }
 extension UIView{

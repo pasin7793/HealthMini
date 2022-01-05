@@ -10,8 +10,8 @@ import UIKit
 class SettingCoordinator: BaseCoordinator{
     
     var navigationController: UINavigationController?
-
-       init(navigationController :UINavigationController?) {
-           self.navigationController = navigationController
-       }
+    
+    init(navigationController :UINavigationController?) {
+        self.navigationController = navigationController
+    }
 }
